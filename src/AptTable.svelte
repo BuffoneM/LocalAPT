@@ -45,14 +45,13 @@
 </script>
 
 <main>
-    <div>
-        <table>
-            <SvelteTable {columns} {rows}/>
-        </table>
-    </div>
+    <table>
+        <SvelteTable {columns} {rows}/>
+    </table>
 </main>
 
 <style>
+
     table {
         margin: 5em;
         padding: 2.5rem;
@@ -65,10 +64,14 @@
     }
 
     :global(table td) {
-        color: var(--c1);
         text-align: left;
         padding: 1rem;
         border-radius: 2.5px;
+    }
+
+    :global(table tr:hover) {
+        background-color: var(--c2) !important;
+        color: var(--c5) !important;
     }
 
     :global(table tbody tr:nth-child(odd)) {
