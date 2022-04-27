@@ -69,6 +69,10 @@
         border-radius: 2.5px;
     }
 
+    :global(table tr) {
+        border-radius: 2.5px;
+    }
+    
     :global(table tr:hover) {
         background-color: var(--c2) !important;
         color: var(--c5) !important;
