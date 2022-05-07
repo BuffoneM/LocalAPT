@@ -1,7 +1,8 @@
 <link rel='stylesheet' href='/global.css'>
 
 <script lang="ts">
-	import AptTable from './AptTable.svelte';
+	import AptTable from "./AptTable.svelte";
+
 	// create greeting based on time of day
 	const username = 'user';
 	const greeting = new Date().getHours() < 12 ? `Good morning, ${ username } ☀` : 
